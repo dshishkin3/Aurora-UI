@@ -1,6 +1,8 @@
 # Aurora UI
 
-ui библиотека `@ihopeyoucanfly/aurora-ui` на основе radix ui, shadcn
+ui библиотека на основе radix ui, shadcn
+
+https://www.npmjs.com/package/@ihopeyoucanfly/aurora-ui
 
 ## Запуск и разработка:
 
