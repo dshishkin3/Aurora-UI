@@ -1,6 +1,6 @@
 # Aurora UI
 
-ui библиотека `@ihopeyoucanfly/aurora-ui`
+ui библиотека `@ihopeyoucanfly/aurora-ui` на основе
 
 ## Запуск и разработка:
 

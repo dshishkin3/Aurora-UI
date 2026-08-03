@@ -12,9 +12,18 @@ try {
   const { name } = JSON.parse(readFileSync("package.json", "utf8"));
   writeFileSync(
     join(consumerDir, "package.json"),
-    JSON.stringify({ name: "consumer-check", private: true, type: "module" }),
+    JSON.stringify({
+      name: "consumer-check",
+      private: true,
+      type: "module",
+      dependencies: {
+        [name]: `file:${join(process.cwd(), archive)}`,
+        react: `file:${join(process.cwd(), "node_modules/react")}`,
+        "react-dom": `file:${join(process.cwd(), "node_modules/react-dom")}`,
+      },
+    }),
   );
-  execFileSync("npm", ["install", join(process.cwd(), archive)], {
+  execFileSync("npm", ["install", "--offline", "--ignore-scripts", "--no-audit", "--no-fund"], {
     cwd: consumerDir,
     stdio: "inherit",
     env: npmEnv,
