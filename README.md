@@ -1,7 +1,6 @@
 # Aurora UI
 
-ui библиотека `@ihopeyoucanfly/aurora-ui` на основе
-
+ui библиотека `@ihopeyoucanfly/aurora-ui` на основе radix ui, shadcn
 ## Запуск и разработка:
 
 ```bash
